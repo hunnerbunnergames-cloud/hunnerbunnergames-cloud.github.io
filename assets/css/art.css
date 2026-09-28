@@ -1,7 +1,7 @@
 /* Approved-art integration layer. The primary banner remains source-locked. */
-.hero__visual[data-art-loaded="true"]{background-image:linear-gradient(90deg,rgba(7,17,29,.22),rgba(7,17,29,0) 32%),var(--art-image)!important;background-size:112% auto;background-position:center 43%;background-repeat:no-repeat;position:relative;overflow:hidden;background-color:#091827}
+.hero__visual[data-art-loaded="true"]{background-image:linear-gradient(90deg,rgba(7,17,29,.16),rgba(7,17,29,0) 28%),var(--art-image)!important;background-size:cover;background-position:center center;background-repeat:no-repeat;position:relative;overflow:hidden;background-color:#091827}
 .hero__visual[data-art-loaded="true"]:before{display:none}
-.hero__visual[data-art-loaded="true"]:after{content:"";position:absolute;left:-2px;right:-2px;bottom:-2px;height:26px;background:#091827;z-index:5;pointer-events:none}
+.hero__visual[data-art-loaded="true"]:after{display:none}
 .game-card__art[data-art-loaded="true"]:before{background-image:var(--art-image)!important;background-size:cover;background-position:center}
 .game-card__art[data-art-loaded="true"]:after{content:""!important;background:linear-gradient(180deg,transparent 48%,#0b1826 100%)}
 .game-card__art--curio[data-art-loaded="true"]:before{background-size:cover;background-position:center 48%}
@@ -27,5 +27,5 @@
 .about-philosophy h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.5rem)}
 .about-philosophy p:not(.eyebrow){margin:0;color:#c7d0da;max-width:760px}
 @media(max-width:980px){.about-compact__grid{grid-template-columns:1fr}.about-compact__copy{grid-template-columns:1fr 1fr}.about-compact__mascot .story-mascot__approved{width:min(100%,280px)}}
-@media(max-width:900px){.hero__visual[data-art-loaded="true"]{background-size:cover;background-position:center 42%}}
+@media(max-width:900px){.hero__visual[data-art-loaded="true"]{background-size:cover;background-position:center center}}
 @media(max-width:720px){.about-compact{padding:36px 0 40px}.about-compact__copy{grid-template-columns:1fr}.about-panel{padding:26px}.about-philosophy{flex-direction:column;align-items:flex-start;padding:24px}}
