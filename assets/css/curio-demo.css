@@ -1,0 +1,10 @@
+/* Curio Cargo demo: isolated from the locked site presentation. */
+.curio-demo{scroll-margin-top:90px;background:radial-gradient(ellipse at 15% 40%,#183a2c 0,transparent 60%),#091b16}
+.curio-demo__layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,70px);align-items:center}
+.curio-demo__stage{width:100%;max-width:500px;margin-inline:auto;overflow:hidden;border:1px solid #8e7543;border-radius:22px;background:#091611;box-shadow:0 24px 65px #0005}
+.curio-demo__preview{position:relative;min-height:570px;display:flex;align-items:end;isolation:isolate}
+.curio-demo__art{position:absolute;inset:0;z-index:-2;background-image:var(--art-image);background-position:center;background-size:cover}
+.curio-demo__preview:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 20%,#071712ee 75%)}
+.curio-demo__invitation{width:100%;padding:32px;text-align:center}.curio-demo__invitation h3{font-size:1.8rem;line-height:1.15;margin:12px 0 24px}.curio-demo__invitation p{font-size:.82rem;color:#d2d9ce;margin-bottom:0}
+.curio-demo__details h3{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2}.curio-demo__details p,.curio-demo__details li{color:#c8d4cc}.curio-demo__details ul{padding-left:1.2rem;line-height:1.9}.curio-demo__note{font-size:.9rem}.curio-demo__android{margin-top:28px;padding-top:28px;border-top:1px solid #ffffff26}.curio-demo__android p{font-size:.9rem}.curio-demo__stage iframe{display:block;width:100%;aspect-ratio:9/16;border:0}.curio-demo [hidden]{display:none!important}
+@media(max-width:760px){.curio-demo__layout{grid-template-columns:1fr}.curio-demo__stage{max-width:390px}.curio-demo__preview{min-height:480px}.curio-demo__invitation{padding:26px 20px}}
