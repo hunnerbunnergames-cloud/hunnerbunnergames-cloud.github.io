@@ -11,7 +11,7 @@ Primary domain: `hunnerbunnergames.com`
 - Dark polished base with playful accent moments
 - No newsletter, CMS, database, social feed, blog, or contact form at launch
 - Support: `support@hunnerbunnergames.com`
-- Intended to go live before Curio Cargo launches
+- Curio Cargo public launch is live
 
 ## Brand authority
 
@@ -21,10 +21,10 @@ The approved top HunnerBunner banner is a **locked brand asset**. Do not regener
 
 ## Public project labels
 
-- Curio Cargo — HB-01 — featured title — Coming to Google Play
-- Project Orchard — HB-02 — Cozy Space Farming — In Development
-- Project Iron — HB-03 — Gladiatorial Action — In Development
-- Project Beacon — HB-04 — Creature Survival — In Development
+- Curio Cargo â€” HB-01 â€” featured title â€” Coming to Google Play
+- Project Orchard â€” HB-02 â€” Cozy Space Farming â€” In Development
+- Project Iron â€” HB-03 â€” Gladiatorial Action â€” In Development
+- Project Beacon â€” HB-04 â€” Creature Survival â€” In Development
 
 ## Studio tagline
 
@@ -36,13 +36,13 @@ Homepage headline:
 
 ## Site structure
 
-- `/` — Home
-- `/games/` — Games
-- `/curio-cargo/` — Curio Cargo
-- `/about/` — About
-- `/support/` — Support hub
-- `/support/curio-cargo/` — Curio Cargo support
-- `/privacy/` — Privacy
+- `/` â€” Home
+- `/games/` â€” Games
+- `/curio-cargo/` â€” Curio Cargo
+- `/about/` â€” About
+- `/support/` â€” Support hub
+- `/support/curio-cargo/` â€” Curio Cargo support
+- `/privacy/` â€” Privacy
 
 ## Local preview
 
@@ -62,27 +62,17 @@ Game-specific claims must stay aligned with the relevant game repository. In par
 
 ## Deployment
 
-Hosting is intentionally not provider-specific yet. The production target is a free static host with HTTPS and a custom domain. DNS and hosting should be connected only after the owner approves the production branch/site review.
+The private source repository and public GitHub Pages repository contain identical site files. Production uses GitHub Pages with HTTPS at https://hunnerbunnergames.com/.
 
-This repository is intentionally independent from individual game repositories.
+## Curio Cargo public launch
 
+Official portal/developer link: https://hunnerbunnergames.com/curio-cargo/
+Demo link: https://hunnerbunnergames.com/curio-cargo/demo/
+Google Play: https://play.google.com/store/apps/details?id=com.hunnerbunnergames.curiocargo
+Trailer: https://youtube.com/shorts/ta9TiI9vkEI?feature=share
 
-## Curio Cargo web demo (prepared; publication on hold)
+The landing page loads the demo iframe only after Play Web Demo is pressed, and the YouTube player only after Play official trailer is pressed. No game/video preloads or automatic redirects.
 
-The landing page creates the game iframe only after Play Web Demo is pressed.
-The standalone runtime lives at `/curio-cargo/demo/`. Publish the entire directory
-with its Build subdirectory unchanged. This uses the supplied Final_Fallback export
-(Brotli + Unity Decompression Fallback ON), not the header-dependent original ZIP.
-Serve `.unityweb` as static bytes without Content-Encoding; Unity's loader handles
-decompression. No custom server, cross-origin isolation, or build step is required.
-The original ZIP, Android build, locked banner and approved artwork are unchanged.
+Publish the entire demo directory with Build unchanged. This is the supplied Final_Fallback export with Brotli and Unity Decompression Fallback enabled. Serve .unityweb files as static bytes without Content-Encoding; Unity handles decompression. No custom server or cross-origin isolation is required.
 
-The Google Play listing is still in review. Keep Coming to Google Play and do not
-publish this change until the owner resumes publication. When the real listing is
-available, replace the marked status in `curio-cargo/index.html` with its approved
-store link. The game export itself retains its existing end-of-demo store link.
-
-Validation: fallback export bytes/ZIP integrity, all HTML local links and assets,
-JavaScript syntax, locked asset byte comparison, desktop and 390px browser layout,
-click-only iframe creation, close/reopen, and Unity startup on a plain static server.
-Physical mobile, Safari/Firefox, and full playthrough were not tested in this pass.
+Demo progress stays in the browser and does not transfer to Android. The locked banner, artwork, runtime and Android build are unchanged. Historical Design documents retain their original approved wording; the owner's public-launch instruction supersedes their pre-release status.

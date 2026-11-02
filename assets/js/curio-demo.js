@@ -31,3 +31,20 @@
     play.focus();
   });
 })();
+
+// Keep third-party video requests behind an explicit visitor action.
+(() => {
+  const play = document.getElementById('trailer-play');
+  const stage = document.getElementById('trailer-stage');
+  if (!play || !stage) return;
+  play.addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.title = 'Curio Cargo official trailer';
+    frame.src = 'https://www.youtube-nocookie.com/embed/ta9TiI9vkEI?autoplay=1&rel=0';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    stage.replaceChildren(frame);
+    frame.focus();
+  }, { once: true });
+})();
