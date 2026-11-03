@@ -8,10 +8,10 @@
 
 </style></head><body><main id="frame" aria-label="Curio Cargo browser demo"><canvas id="unity-canvas" width="1080" height="1920" tabindex="0" aria-label="Curio Cargo game"></canvas><div id="loading"><div><p>Loading Curio Cargo</p><progress id="progress" max="1" value="0"></progress><p id="error" role="alert"></p></div></div></main>
 
-<script src="Build/WebDemoFinalFallback.loader.js"></script><script>
+<script src="Build/WebDemoV11Fallback.loader.js"></script><script>
 
 const canvas=document.getElementById('unity-canvas');
 
-createUnityInstance(canvas,{dataUrl:'Build/WebDemoFinalFallback.data.unityweb',frameworkUrl:'Build/WebDemoFinalFallback.framework.js.unityweb',codeUrl:'Build/WebDemoFinalFallback.wasm.unityweb',streamingAssetsUrl:'StreamingAssets',companyName:'HunnerBunner Games',productName:'Curio Cargo Web Demo',productVersion:'demo-1',matchWebGLToCanvasSize:true,devicePixelRatio:Math.min(window.devicePixelRatio||1,2)},p=>document.getElementById('progress').value=p).then(()=>{document.getElementById('loading').remove();canvas.focus()}).catch(()=>{document.getElementById('error').textContent='The demo could not load. Please refresh, or try an up-to-date browser.'});
+createUnityInstance(canvas,{dataUrl:'Build/WebDemoV11Fallback.data.unityweb',frameworkUrl:'Build/WebDemoV11Fallback.framework.js.unityweb',codeUrl:'Build/WebDemoV11Fallback.wasm.unityweb',streamingAssetsUrl:'StreamingAssets',companyName:'HunnerBunner Games',productName:'Curio Cargo Web Demo',productVersion:'demo-1',matchWebGLToCanvasSize:true,devicePixelRatio:Math.min(window.devicePixelRatio||1,2)},p=>document.getElementById('progress').value=p).then(()=>{document.getElementById('loading').remove();canvas.focus()}).catch(()=>{document.getElementById('error').textContent='The demo could not load. Please refresh, or try an up-to-date browser.'});
 
 </script></body></html>
