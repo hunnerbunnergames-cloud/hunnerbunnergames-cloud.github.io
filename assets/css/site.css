@@ -59,3 +59,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent2);outline-of
 .game-card:has(.game-card__link){position:relative}.game-card__link:after{content:"";position:absolute;inset:0}.game-card:has(.game-card__link):focus-within{outline:3px solid var(--accent2);outline-offset:4px}
 @media(max-width:760px){body[data-menu-open="true"]{overflow:hidden}.site-nav{overscroll-behavior:contain}.site-nav a{min-height:48px;display:flex;align-items:center}.nav-cta{margin-top:6px;justify-content:center}.game-card{min-height:0}.game-card__art{min-height:230px}.content-section{padding:48px 0}.content-card{padding:26px}.reading-layout .content-card{padding:28px 24px}}
 @media(max-width:440px){.page-hero p,.curio-hero__copy p{font-size:1.04rem}.footer-bottom{gap:8px}.brand-banner{min-height:0}}
+
+/* Aetherune privacy policy */
+.privacy-policy-width{max-width:800px}
+.privacy-policy-hero{padding-bottom:54px}
+.privacy-policy-hero h1{max-width:760px;font-size:clamp(2.55rem,5vw,4.6rem)}
+.privacy-policy-updated{margin:12px 0 0!important;font-size:1rem!important;color:#d6dee6!important}
+.privacy-policy-section{padding-top:54px}
+.privacy-policy-content{max-width:760px;margin:0 auto;font-size:17px;line-height:1.72}
+.privacy-policy-content h2{font-size:clamp(1.45rem,2.6vw,2rem);margin:38px 0 12px;color:#18202a;letter-spacing:-.02em}
+.privacy-policy-content p{color:#3d4854;margin:0 0 18px}
+.privacy-policy-content ul{margin:0 0 20px;padding-left:1.35rem}
+.privacy-policy-content li{color:#3d4854;margin:.45rem 0}
+.privacy-policy-content a{color:#b84c0d;font-weight:750;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:760px){.privacy-policy-content{font-size:16px}.privacy-policy-section{padding-top:40px}.privacy-policy-hero{padding-bottom:44px}}
